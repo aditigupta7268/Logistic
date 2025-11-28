@@ -156,6 +156,10 @@ list_of_files = [
     "requirements.txt",
     "setup.py",
     "docker-compose.yml",
+    
+    #Logs
+    "logs/.gitkeep",
+    "backend/app/utils/logger.py", 
 ]
 
 
@@ -174,5 +178,4 @@ for filepath in list_of_files:
     else:
         logging.info(f"{filename} already exists")
 
-logging.info(f"\n{project_name} folder structure created successfully!")
-logging.info("Don't forget to create your virtual environment: python -m venv venv")
+logging.info(f"\n{project_name} folder structure created successfully!") 
